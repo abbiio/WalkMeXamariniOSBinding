@@ -1,0 +1,14 @@
+/Users/or.e/Developer/WalkMe/WalkMeXamariniOSBinding/WalkMeSampleApp/bin/iPhone/Debug/WalkMeSampleApp.exe
+/Users/or.e/Developer/WalkMe/WalkMeXamariniOSBinding/WalkMeSampleApp/bin/iPhone/Debug/WalkMeSampleApp.pdb
+/Users/or.e/Developer/WalkMe/WalkMeXamariniOSBinding/WalkMeSampleApp/bin/iPhone/Debug/WalkMeXamariniOSBinding.dll
+/Users/or.e/Developer/WalkMe/WalkMeXamariniOSBinding/WalkMeSampleApp/bin/iPhone/Debug/WalkMeXamariniOSBinding.pdb
+/Users/or.e/Developer/WalkMe/WalkMeXamariniOSBinding/WalkMeSampleApp/obj/iPhone/Debug/WalkMeSampleApp.csproj.CoreCompileInputs.cache
+/Users/or.e/Developer/WalkMe/WalkMeXamariniOSBinding/WalkMeSampleApp/obj/iPhone/Debug/WalkMeSampleApp.csproj.CopyComplete
+/Users/or.e/Developer/WalkMe/WalkMeXamariniOSBinding/WalkMeSampleApp/obj/iPhone/Debug/WalkMeSampleApp.exe
+/Users/or.e/Developer/WalkMe/WalkMeXamariniOSBinding/WalkMeSampleApp/obj/iPhone/Debug/WalkMeSampleApp.pdb
+/Users/or.e/Developer/WalkMe/WalkMeXamariniOSBinding/WalkMeSampleApp/obj/iPhone/Debug/device-builds/iphone6.1-11.0/ibtool/_BundleResourceWithLogicalName.items
+/Users/or.e/Developer/WalkMe/WalkMeXamariniOSBinding/WalkMeSampleApp/obj/iPhone/Debug/device-builds/iphone6.1-11.0/actool/_PartialAppManifest.items
+/Users/or.e/Developer/WalkMe/WalkMeXamariniOSBinding/WalkMeSampleApp/obj/iPhone/Debug/device-builds/iphone6.1-11.0/actool/_BundleResourceWithLogicalName.items
+/Users/or.e/Developer/WalkMe/WalkMeXamariniOSBinding/WalkMeSampleApp/obj/iPhone/Debug/device-builds/iphone6.1-11.0/coremlc/_PartialAppManifest.items
+/Users/or.e/Developer/WalkMe/WalkMeXamariniOSBinding/WalkMeSampleApp/obj/iPhone/Debug/device-builds/iphone6.1-11.0/coremlc/_BundleResourceWithLogicalName.items
+/Users/or.e/Developer/WalkMe/WalkMeXamariniOSBinding/WalkMeSampleApp/obj/iPhone/Debug/device-builds/iphone6.1-11.0/optimized/

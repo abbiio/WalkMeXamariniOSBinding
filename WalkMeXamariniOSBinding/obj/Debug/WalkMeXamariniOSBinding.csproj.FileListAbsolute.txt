@@ -1,0 +1,6 @@
+/Users/or.e/Developer/WalkMe/WalkMeXamariniOSBinding/WalkMeXamariniOSBinding/bin/Debug/WalkMeXamariniOSBinding.dll
+/Users/or.e/Developer/WalkMe/WalkMeXamariniOSBinding/WalkMeXamariniOSBinding/bin/Debug/WalkMeXamariniOSBinding.pdb
+/Users/or.e/Developer/WalkMe/WalkMeXamariniOSBinding/WalkMeXamariniOSBinding/obj/Debug/WalkMeXamariniOSBinding.csprojAssemblyReference.cache
+/Users/or.e/Developer/WalkMe/WalkMeXamariniOSBinding/WalkMeXamariniOSBinding/obj/Debug/WalkMeXamariniOSBinding.csproj.CoreCompileInputs.cache
+/Users/or.e/Developer/WalkMe/WalkMeXamariniOSBinding/WalkMeXamariniOSBinding/obj/Debug/WalkMeXamariniOSBinding.dll
+/Users/or.e/Developer/WalkMe/WalkMeXamariniOSBinding/WalkMeXamariniOSBinding/obj/Debug/WalkMeXamariniOSBinding.pdb

@@ -1,0 +1,5 @@
+RemoveDynamicRegistrar:true
+/Users/or.e/Developer/WalkMe/WalkMeXamariniOSBinding/WalkMeSampleApp/bin/iPhone/Debug/WalkMeSampleApp.app:/Users/or.e/Developer/WalkMe/WalkMeXamariniOSBinding/WalkMeSampleApp/obj/iPhone/Debug/mtouch-cache/1-Link/WalkMeSampleApp.exe
+/Users/or.e/Developer/WalkMe/WalkMeXamariniOSBinding/WalkMeSampleApp/bin/iPhone/Debug/WalkMeSampleApp.app:/Users/or.e/Developer/WalkMe/WalkMeXamariniOSBinding/WalkMeSampleApp/obj/iPhone/Debug/mtouch-cache/1-Link/mscorlib.dll
+/Users/or.e/Developer/WalkMe/WalkMeXamariniOSBinding/WalkMeSampleApp/bin/iPhone/Debug/WalkMeSampleApp.app:/Users/or.e/Developer/WalkMe/WalkMeXamariniOSBinding/WalkMeSampleApp/obj/iPhone/Debug/mtouch-cache/1-Link/Xamarin.iOS.dll
+/Users/or.e/Developer/WalkMe/WalkMeXamariniOSBinding/WalkMeSampleApp/bin/iPhone/Debug/WalkMeSampleApp.app:/Users/or.e/Developer/WalkMe/WalkMeXamariniOSBinding/WalkMeSampleApp/obj/iPhone/Debug/mtouch-cache/1-Link/WalkMeXamariniOSBinding.dll
