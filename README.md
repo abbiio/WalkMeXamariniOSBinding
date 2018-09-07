@@ -12,8 +12,8 @@ A Simple SDK that allows anyone to create and manage in-app content without codi
 * Launch and analyze in-app content in seconds, no need for app store approval.
 
 ### Installation
-* Add a reference to the binding project as described here:
-https://docs.microsoft.com/en-us/xamarin/ios/platform/binding-objective-c/walkthrough?tabs=vsmac#using-the-binding
+* See here:
+https://support.walkme.com/knowledge-base/mobile-how-to-integrate-the-ios-walkme-mobile-sdk-with-xamarin/
 
 ### Support
 * Email us with every question or comment at support@walkme.com
