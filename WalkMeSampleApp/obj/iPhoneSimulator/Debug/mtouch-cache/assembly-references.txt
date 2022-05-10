@@ -1,8 +1,0 @@
-/Users/or.e/Developer/WalkMe/WalkMeXamariniOSBinding/WalkMeSampleApp/bin/iPhoneSimulator/Debug/WalkMeSampleApp.exe
-/Library/Frameworks/Xamarin.iOS.framework/Versions/11.14.0.14/lib/mono/Xamarin.iOS/mscorlib.dll
-/Library/Frameworks/Xamarin.iOS.framework/Versions/11.14.0.14/lib/mono/Xamarin.iOS/../../64bits/Xamarin.iOS.dll
-/Library/Frameworks/Xamarin.iOS.framework/Versions/11.14.0.14/lib/mono/Xamarin.iOS/System.dll
-/Library/Frameworks/Xamarin.iOS.framework/Versions/11.14.0.14/lib/mono/Xamarin.iOS/Mono.Security.dll
-/Library/Frameworks/Xamarin.iOS.framework/Versions/11.14.0.14/lib/mono/Xamarin.iOS/System.Xml.dll
-/Library/Frameworks/Xamarin.iOS.framework/Versions/11.14.0.14/lib/mono/Xamarin.iOS/System.Core.dll
-/Users/or.e/Developer/WalkMe/WalkMeXamariniOSBinding/WalkMeXamariniOSBinding/bin/Debug/WalkMeXamariniOSBinding.dll
