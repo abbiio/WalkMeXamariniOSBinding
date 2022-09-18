@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace WalkMeXamariniOSBinding
 {
@@ -11,8 +11,27 @@ namespace WalkMeXamariniOSBinding
         Max = 14
     }
 
-    public enum EventType : uint
+    public enum WMStatsEventType : uint
     {
-        Goal = 1
+        SessionStarted,
+        SessionStop,
+        AppTerminated,
+        AppEnteredFg,
+        AppEnteredBg,
+        PromoImp,
+        PromoClk,
+        StepImp,
+        StepClk,
+        Goal,
+        ViewTransition,
+        Users,
+        OnboardingItemCompleted
+    }
+
+
+    public enum WMProxyOptionMode : uint
+    {
+        All = 0,
+        Analytics = 1
     }
 }

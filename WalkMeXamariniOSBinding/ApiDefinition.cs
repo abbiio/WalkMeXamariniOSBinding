@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 using UIKit;
 using Foundation;
@@ -109,15 +109,77 @@ namespace WalkMeXamariniOSBinding
         NSDictionary CampaignData { get; set; }
     }
 
+    // @interface WMStartOptions : NSObject
+    [BaseType(typeof(NSObject))]
+    interface WMStartOptions
+    {
+        // - (instancetype)initWithKey:(NSString *)key andSecret:(NSString *)secret;
+        [Export("initWithKey:andSecret:")]
+        WMStartOptions Constructor(string appKey, string appSecret);
+
+        // @property(nonatomic, strong) NSString* proxyGatewayURL;
+        [Export("proxyGatewayURL", ArgumentSemantic.Strong)]
+        string ProxyGatewayURL { get; set; }
+
+        // @property(nonatomic, strong) NSString* selfHostedURL;
+        [Export("selfHostedURL", ArgumentSemantic.Strong)]
+        string SelfHostedURL { get; set; }
+
+        // @property(nonatomic, strong) NSString* language;
+        [Export("language", ArgumentSemantic.Strong)]
+        string Language { get; set; }
+
+        // @property(nonatomic, strong) NSString* userId;
+        [Export("userId", ArgumentSemantic.Strong)]
+        string UserId { get; set; }
+
+        // @property(nonatomic, strong) NSString* startingCampaignId;
+        [Export("startingCampaignId", ArgumentSemantic.Strong)]
+        string StartingCampaignId { get; set; }
+
+        // @property (nonatomic, assign) BOOL powerModeEnabled;
+        [Export("powerModeEnabled", ArgumentSemantic.Assign)]
+        bool PowerModeEnabled { get; set; }
+
+        // @property (nonatomic, assign) BOOL automationEnabled;
+        [Export("automationEnabled", ArgumentSemantic.Assign)]
+        bool AutomationEnabled { get; set; }
+
+        // @property (nonatomic, assign) NSTimeInterval sessionTimeout;
+        [Export("sessionTimeout", ArgumentSemantic.Assign)]
+        double SessionTimeout { get; set; }
+
+        // @property (nonatomic, assign) ABBIAppType type;
+        [Export("type", ArgumentSemantic.Assign)]
+        ABBIAppType Type { get; set; }
+
+    }
+
     // @protocol WMCampaignInfoDelegate <NSObject>
     [Protocol, Model]
     [BaseType(typeof(NSObject))]
     interface WMCampaignInfoDelegate
     {
-        // @required -(void)campaignDidDismiss:(WMCampaignInfo *)campaignInfo;
+        // @optional - (void)campaignDidDismiss:(WMCampaignInfo *)campaignInfo;
         [Abstract]
         [Export("campaignDidDismiss:")]
         void CampaignDidDismiss(WMCampaignInfo campaignInfo);
+
+        // @optional - (void)campaignWillShow:(WMCampaignInfo *)campaignInfo;
+        [Abstract]
+        [Export("campaignWillShow:")]
+        void CampaignWillShow(WMCampaignInfo campaignInfo);
+    }
+
+    // @protocol WMAnalyticsDelegate <NSObject>
+    [Protocol, Model]
+    [BaseType(typeof(NSObject))]
+    interface WMAnalyticsDelegate
+    {
+        // @required - (void)didSendAnalyticsEventOfType:(WMStatsEventType)type withPayload:(NSDictionary<NSString *, id> *)payload;
+        [Abstract]
+        [Export("didSendAnalyticsEventOfType:withPayload")]
+        void DidSendAnalyticsEventOfType(WMStatsEventType eventType, NSDictionary payload);
     }
 
     // @interface ABBI : NSObject
@@ -127,19 +189,41 @@ namespace WalkMeXamariniOSBinding
         [Wrap("WeakCampaignInfoDelegate")]
         WMCampaignInfoDelegate CampaignInfoDelegate { get; set; }
 
+        [Wrap("WeakAnalyticsDelegate")]
+        WMAnalyticsDelegate AnalyticsDelegate { get; set; }
+
         // @property (nonatomic, weak) id<WMCampaignInfoDelegate> campaignInfoDelegate;
         [NullAllowed, Export("campaignInfoDelegate", ArgumentSemantic.Weak)]
         NSObject WeakCampaignInfoDelegate { get; set; }
+
+        // @property (nonatomic, weak) id<WMAnalyticsDelegate> analyticsDelegate;
+        [NullAllowed, Export("analyticsDelegate", ArgumentSemantic.Weak)]
+        NSObject WeakAnalyticsDelegate { get; set; }
 
         // +(void)start:(NSString *)appId withSecretKey:(NSString *)appSecretKey;
         [Static]
         [Export("start:withSecretKey:")]
         void Start(string appId, string appSecretKey);
 
+        // + (void)startWithOptions:(WMStartOptions *)options;
+        [Static]
+        [Export("startWithOptions:")]
+        void StartWithOptions(WMStartOptions options);
+
         // +(void)start:(NSString *)appId withSecretKey:(NSString *)appSecretKey andApplicationType:(ABBIAppType)type;
         [Static]
         [Export("start:withSecretKey:andApplicationType:")]
         void Start(string appId, string appSecretKey, ABBIAppType type);
+
+        // + (void) stop;
+        [Static]
+        [Export("stop")]
+        void Stop();
+
+        // + (void) restart;
+        [Static]
+        [Export("restart")]
+        void Restart();
 
         // +(void)sendGoal:(NSString *)goalName withProperites:(NSDictionary *)properties;
         [Static]
@@ -186,9 +270,19 @@ namespace WalkMeXamariniOSBinding
         [Export("setUserID:")]
         void SetUserID(string userId);
 
+        // + (void)setScreenID:(NSString *)screenID;
+        [Static]
+        [Export("setScreenID:")]
+        void SetScreenID(string screenID);
+
         // +(void)setCampaignInfoDelegate:(id<WMCampaignInfoDelegate>)delegate;
         [Static]
         [Export("setCampaignInfoDelegate:")]
         void SetCampaignInfoDelegate(WMCampaignInfoDelegate @delegate);
+
+        // + (void)setAnalyticsDelegate:(id<WMAnalyticsDelegate>)delegate;
+        [Static]
+        [Export("setAnalyticsDelegate:")]
+        void SetAnalyticsDelegate(WMAnalyticsDelegate @delegate);
     }
 }
